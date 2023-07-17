@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <title>Responsive Admin Dashboard using HTML,CSS,JS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <img src="./images/logo.png" alt="" class="logo" />
+        <div class="search-bar">
+          <span class="material-symbols-sharp"> search </span>
+          <input type="search" placeholder="Search..." />
+        </div>
+        <div class="profile-area">
+          <div class="theme-btn">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="profile-photo">
+              <img src="./images/myprof.jpg" alt="" />
+            </div>
+            <h5>Ali Yousefi</h5>
+            <span class="material-icons-sharp"> expand_more </span>
+          </div>
+          <button id="menu-btn">
+            <span class="material-icons-outlined"> menu </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--End of navbar-->
+    <main>
+      <aside>
+        <button id="close-btn">
+          <span class="material-icons-sharp"> close </span>
+        </button>
+
+        <div class="sidebar">
+          <a href="#">
+            <span class="material-icons-sharp"> dashboard </span>
+          </a>
+        </div>
+      </aside>
+      <!--End Of Aside-->
+      <section class="middle"></section>
+      <!--End Of Middle-->
+      <section class="right"></section>
+      <!--End Of Right-->
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
