@@ -192,3 +192,52 @@ nav .profile-area .profile-photo {
 nav .profile-area button {
   display: none;
 }
+/*=================================aside style=================================*/
+main {
+  display: grid;
+  grid-template-columns: 16rem auto 30rem;
+  gap: 2rem;
+  width: 96%;
+  margin: 1rem auto;
+}
+main aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88vh;
+}
+/* will be shown only in mobile*/
+main aside button#close-btn {
+  display: none;
+}
+main aside .sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 4.2rem;
+  color: var(--color-gray-light);
+  position: relative;
+  transition: 0.3s;
+}
+main aside .sidebar a span {
+  font-size: 1.7rem;
+  margin-left: 3rem;
+  transition: 0.3s;
+}
+main aside .sidebar a.active {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+main aside .sidebar a.active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--color-primary);
+}
+main aside .sidebar a:hover {
+  color: var(--color-primary);
+}
+main aside .sidebar a:hover span {
+  margin-left: 2rem;
+}
